@@ -1,0 +1,24 @@
+class madrese:
+    count=0
+    def __init__(sal, moalem , object ,danesh_amooz_1 ,danesh_nomre_1  , danesh_amooz_2 ,danesh_nomre_2):
+        sal.object = object
+        sal.moalem = moalem
+        sal.danesh_amooz_1 = danesh_amooz_1
+        sal.danesh_nomre_1= danesh_nomre_1
+        sal.danesh_amooz_2 = danesh_amooz_2
+        sal.danesh_nomre_2= danesh_nomre_2
+    def get_nmoalem(sal):
+        print ("moaleme in sal hast %s" % sal.moalem )
+    def get_danesh(sal):
+        print ("danesh amooz in sal hast %s" % sal.danesh_amooz)
+    def get_object(sal):
+        print("class e danesh amozan %s" % sal.object)
+    def get_nomre(sal):
+        return (sal.danesh_nomre_1+sal.danesh_nomre_2)/2
+    
+
+riazi_2024 = madrese("Mrs.jules","math1","judie", 18 ,"jack" , 13)
+olum_2024 = madrese("Mr.jefferson","science1","judie",20 , "jack", 17)
+
+print (riazi_2024.get_nomre())
+print (olum_2024.get_nomre())
